@@ -2,4 +2,7 @@
 <resources>
     <dimen name="smallButtonWidth">180dp</dimen>
     <dimen name="smallButtonHeight">55dp</dimen>
+    <dimen name="editTextHeight">55dp</dimen>
+    <dimen name="mediumButtonWidth">210dp</dimen>
+    <dimen name="mediumButtonHeight">55dp</dimen>
 </resources>

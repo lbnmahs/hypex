@@ -2,4 +2,6 @@
     <string name="app_name">HyPex</string>
     <string name="oneStopPoint">One stop point\nfor your\ntech needs</string>
     <string name="oneStopPointSub">Get your tech accessories\n at a fair price</string>
+    <string name="logo">Logo</string>
+    <string name="start">START</string>
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587049421614",
+    "project_id": "hypex-9403c",
+    "storage_bucket": "hypex-9403c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587049421614:android:8b782fc192058f684348bf",
+        "android_client_info": {
+          "package_name": "com.example.hypex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587049421614-n76ppe8gu7ej6nrjvjtguur2q59ci1qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgwfKTUceF-ZSE_QRDyFVvqqnHmTD7Oc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587049421614-n76ppe8gu7ej6nrjvjtguur2q59ci1qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

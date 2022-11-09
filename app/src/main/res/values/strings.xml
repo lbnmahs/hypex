@@ -4,4 +4,6 @@
     <string name="oneStopPointSub">Get your tech accessories\n at a fair price</string>
     <string name="logo">Logo</string>
     <string name="start">START</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

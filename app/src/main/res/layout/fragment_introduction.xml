@@ -46,7 +46,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/pinkButtonStyle"
-        android:id="@+id/intro_button"
+        android:id="@+id/btnIntro"
         android:layout_width="@dimen/smallButtonWidth"
         android:layout_height="@dimen/smallButtonHeight"
         app:layout_constraintBottom_toBottomOf="parent"

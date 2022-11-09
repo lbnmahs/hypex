@@ -21,7 +21,7 @@
             android:contentDescription="@string/logo"
             android:id="@+id/logo"
             android:src="@drawable/hypex"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="90dp"
             app:layout_constraintStart_toStartOf="@id/guidelineLeft"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,7 +86,7 @@
             android:gravity="center"
             android:textColor="@color/black"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
             android:id="@+id/btnLogin"
             style="@style/pinkButtonStyle"
             android:layout_width="0dp"
@@ -95,7 +95,8 @@
             app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/forgotPasswordLogin"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            app:spinning_bar_color="@color/white"/>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineLeft"

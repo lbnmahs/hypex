@@ -13,8 +13,10 @@ import androidx.navigation.fragment.findNavController
 import com.example.hypex.R
 import com.example.hypex.activities.ShoppingActivity
 import com.example.hypex.databinding.FragmentLoginBinding
+import com.example.hypex.dialog.setupBottomDialogSheet
 import com.example.hypex.util.Resource
 import com.example.hypex.viewmodel.LoginViewModel
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -41,6 +43,27 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                 val email = edEmailLogin.text.toString().trim()
                 val password = edPasswordLogin.text.toString()
                 viewModel.login(email, password)
+            }
+        }
+        binding.forgotPasswordLogin.setOnClickListener{
+            setupBottomDialogSheet { email ->
+                viewModel.resetPassword(email)
+            }
+        }
+        lifecycleScope.launchWhenStarted {
+            viewModel.resetPassword.collect{
+                when(it){
+                    is Resource.Loading -> {
+
+                    }
+                    is Resource.Success -> {
+                        Snackbar.make(requireView(), "Email sent", Snackbar.LENGTH_LONG).show()
+                    }
+                    is Resource.Error -> {
+                        Snackbar.make(requireView(), "Error: ${it.message}", Snackbar.LENGTH_LONG).show()
+                    }
+                    else -> Unit
+                }
             }
         }
         lifecycleScope.launchWhenStarted {

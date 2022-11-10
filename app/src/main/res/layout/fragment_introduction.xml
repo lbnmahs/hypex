@@ -7,14 +7,15 @@
     android:background="@drawable/login_register_bg">
 
     <ImageView
+        android:id="@+id/intro_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/logo"
         android:src="@drawable/hypex"
-        app:layout_constraintBottom_toTopOf="@+id/intro_title"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
 
     <TextView
         android:id="@+id/intro_title"
@@ -24,10 +25,10 @@
         android:gravity="center"
         android:text="@string/oneStopPoint"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/guidelineRight"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/intro_logo"
+        android:layout_marginTop="100dp" />
 
     <TextView
         android:id="@+id/intro_subtitle"
@@ -47,8 +48,8 @@
         style="@style/pinkButtonStyle"
         android:layout_width="@dimen/smallButtonWidth"
         android:layout_height="@dimen/smallButtonHeight"
+        android:layout_marginTop="50dp"
         android:text="@string/start"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/intro_subtitle" />

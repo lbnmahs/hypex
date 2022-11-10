@@ -1,5 +1,6 @@
 package com.example.hypex.dialog
 
+import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.example.hypex.R
@@ -16,8 +17,8 @@ fun Fragment.setupBottomDialogSheet(
     dialog.show()
 
     val edEmail = view.findViewById<EditText>(R.id.edResetPassword)
-    val btnSend = view.findViewById<EditText>(R.id.btnSendResetPassword)
-    val btnCancel = view.findViewById<EditText>(R.id.btnCancelResetPassword)
+    val btnSend = view.findViewById<Button>(R.id.btnSendResetPassword)
+    val btnCancel = view.findViewById<Button>(R.id.btnCancelResetPassword)
 
     btnSend.setOnClickListener {
         val email = edEmail.text.toString()

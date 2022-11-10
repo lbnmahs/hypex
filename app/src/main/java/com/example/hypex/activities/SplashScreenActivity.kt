@@ -5,14 +5,18 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hypex.R
+import com.example.hypex.databinding.ActivitySplashScreenBinding
 
 @Suppress("DEPRECATION")
 class SplashScreenActivity: AppCompatActivity() {
+    private lateinit var binding: ActivitySplashScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // This is used to hide the status bar and make
         // the splash screen as a full screen activity.
@@ -29,5 +33,9 @@ class SplashScreenActivity: AppCompatActivity() {
             startActivity(intent)
             finish()
         }, 3000) // 3000 is the delayed time in milliseconds.
+
+        val fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
+        binding.splashLogo.animation = fadeInAnimation
+        binding.splashText.animation = fadeInAnimation
     }
 }

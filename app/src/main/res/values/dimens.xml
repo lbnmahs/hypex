@@ -5,4 +5,6 @@
     <dimen name="editTextHeight">55dp</dimen>
     <dimen name="mediumButtonWidth">210dp</dimen>
     <dimen name="mediumButtonHeight">55dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_12sdp">12dp</dimen>
 </resources>

@@ -36,8 +36,8 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
         )
 
         val viewPager2Adapter = HomeViewpagerAdapter(categoryFragments, childFragmentManager, lifecycle)
-        binding.viewpager.adapter = viewPager2Adapter
-        TabLayoutMediator(binding.tabLayout, binding.viewpager){ tab, position ->
+        binding.viewpagerHome.adapter = viewPager2Adapter
+        TabLayoutMediator(binding.tabLayout, binding.viewpagerHome){ tab, position ->
             when(position){
                 0 -> tab.text = "Main"
                 1 -> tab.text = "Headphones"

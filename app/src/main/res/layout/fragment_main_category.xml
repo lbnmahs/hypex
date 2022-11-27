@@ -6,6 +6,7 @@
     android:background="@color/almost_white">
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollMainCategory"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -82,6 +83,17 @@
                 app:layout_constraintTop_toBottomOf="@id/tvBestProducts"
                 android:layout_marginEnd="15dp"
                 android:overScrollMode="never"/>
+
+            <ProgressBar
+                android:id="@+id/bestProductsProgressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="5dp"
+                android:indeterminateTint="@color/dark_gray"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
